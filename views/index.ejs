@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <h2>Hola:
+                    <% if (user) { %>
+                        <%= user.name %>
+                    <% } else { %>
+                        Invitado
+                    <% } %>
+                </h2> 
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Inicio</a></li>
+                    <li> <a href="#">Recursos</a></li>
+                    <li> <a href="#">Consejería </a></li>
+                    <li> <a href="#">Reportes</a></li>
+                    <li> <a type="button" href="logout">logout</a></li>
+                    <li> <a href="#">Iniciar session</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        
+
+        <div class="header content container">
+            <img  class="background-image">
+            <h1>TechGuard: Voces valientes</h1>
+            <p>
+                El ciberbullying es una problemática que afecta a millones de niños y jóvenes en todo el mundo, causando
+                profundas consecuencias emocionales, psicológicas y físicas. Las víctimas suelen enfrentarse a esta
+                situación en aislamiento, sin recursos ni apoyo para sobrellevarla.
+                En TechGuard, hemos desarrollado una solución tecnológica innovadora: una plataforma web interactiva
+                que, utilizando inteligencia artificial, brinda apoyo emocional y psicológico a los niños y jóvenes
+                afectados por el bullying. Además de ofrecer consejos prácticos para ayudarles a afrontar esta difícil
+                situación, nuestro objetivo es contribuir a mejorar su bienestar mental y físico, promoviendo un
+                desarrollo integral y saludable.
+            </p>
+            <a href="#" class="btn-1">Información</a>
+        </div>
+    </header>
+
+    <section class="bullying">
+        <img class="bullying-img" src="img/bg2.png" alt="lateral derecho">
+        <div class="bullying-content container">
+            <h2>¿Cómo se presenta el bullying?</h2>
+            <p class="txt-p">
+                El bullying es un comportamiento agresivo, intencionado y repetido que busca causar daño físico,
+                emocional o psicológico a la víctima. En un entorno escolar, este tipo de acoso puede tomar diversas
+                formas, afectando profundamente a los niños y jóvenes. Aunque el bullying puede manifestarse de
+                diferentes maneras, hay tres tipos principales que destacan por su prevalencia y gravedad: el bullying
+                físico, verbal y cibernético. A continuación, exploramos cada uno en detalle.
+            </p>
+
+            <div class="bullying-group">
+                <div class="bullying-1">
+                    <img src="img/fisico.jpg" alt="Bullying fisico">
+                    <h3>Puños y Patadas: El Bullying Físico</h3>
+                    <p>
+                        El bullying físico es una de las formas más visibles y directas de acoso. Implica agresiones
+                        físicas que van desde empujones y golpes hasta daño intencionado de pertenencias. Los
+                        estudiantes
+                        que sufren este tipo de bullying experimentan una sensación constante de inseguridad, ya que
+                        pueden ser atacados en cualquier momento.
+                    </p>
+                </div>
+
+                <div class="bullying-2">
+                    <img src="img/verbal.jpg" alt="Bullying Verbal">
+                    <h3>Palabras que Duelen: El Bullying Verbal</h3>
+                    <p>
+                        El bullying verbal se centra en el uso de palabras para humillar, intimidar o hacer sentir
+                        inferior a la víctima. Los acosadores emplean insultos, burlas, amenazas o apodos hirientes para
+                        atacar emocionalmente a sus compañeros.
+                    </p>
+                </div>
+
+                <div class="bullying-3">
+                    <img src="img/ciberbullying.png" alt="Ciberbullying">
+                    <h3>Pantallas y Sombras: El Ciberbullying</h3>
+                    <p>
+                        El ciberbullying ha ganado terreno en los últimos años, debido al uso masivo de redes sociales y
+                        tecnologías digitales. A través de mensajes, publicaciones o imágenes, el acoso se amplifica en
+                        el mundo virtual, llegando a la víctima incluso fuera del colegio.
+                    </p>
+                </div>
+            </div>
+            <a href="#">Información</a>
+        </div>
+    </section>
+
+    <main class="Servicios">
+
+        <div class="services-content container">
+            <h2>Comunicanos</h2>
+            <div class=" services-group">
+                <div class="services-1">
+                    <img src="img/verbal servicios.png" alt="servicios_verbal">
+                    <h3>Verbal</h3>
+                </div>
+
+                <div class="services-1">
+                    <img src="img/ciber servicios.png" alt="servicios_verbal">
+                    <h3>Ciberbullying</h3>
+                </div>
+
+                <div class="services-1">
+                    <img src="img/fisico servicios.png" alt="servicios_verbal">
+                    <h3>fisico</h3>
+                </div>
+            </div>
+            <p>
+                El bullying deja huellas profundas en quienes lo sufren. Reflexiona un momento: ¿has vivido o
+                presenciado alguna situación de acoso? Nos gustaría escuchar tu historia. Tu experiencia puede ayudar a
+                otros a no sentirse solos y a encontrar soluciones. ¡Cuéntanos tu caso!
+            </p>
+            <a href="#" class="btn-1">Informanos</a>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

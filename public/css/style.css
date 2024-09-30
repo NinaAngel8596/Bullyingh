@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Encabezado */
+.header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url('../img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Menú de navegación */
+.menu .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+/* Hover del menú corregido */
+.menu .navbar ul li a:hover {
+    color: #CE967B;
+}
+
+/* Ocultar el checkbox para el menú móvil */
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+/* Icono del menú en modo móvil */
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Contenido del encabezado */
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Botón */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #CE967B;
+    color: #f9fafc;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.btn-1:hover {
+    background-color: #ebad8d;
+}
+
+/* Sección de bullying */
+.bullying {
+    background-color: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+
+.bullying-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.1;
+}
+
+.bullying-content {
+    position: relative;
+    z-index: 1;
+}
+
+.bullying-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.bullying-content .txt-p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.bullying-group {
+    display: flex;
+    gap: 20px;
+}
+
+.bullying-group div {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.bullying-group div img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.bullying-group h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.bullying-group p {
+    font-size: 16px;
+    color: #666;
+}
+
+.bullying-content a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #5a9bd5;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.bullying-content a:hover {
+    background: #4a8bc5;
+}
+
+/* Sección de servicios */
+.Servicios {
+    background-color: #e9ecef;
+    padding: 50px 0;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.services-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.services-1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.services-1 img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.services-1 h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.services-content p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.services-content .btn-1 {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-content .btn-1:hover {
+    background: #e65b4f;
+}
+
+/* Media Queries para responsive design */
+@media (max-width: 768px) {
+    .header .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bullying-group {
+        flex-direction: column;
+    }
+
+    .services-group {
+        flex-direction: column;
+    }
+
+    .header label {
+        display: inline-block;
+    }
+
+    .header input[type="checkbox"]:checked ~ .navbar ul {
+        display: block;
+    }
+}
+
+
+
+/* Sección de bienvenida */
+.welcome-section {
+    background-color: #f0f4f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.welcome-message {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.welcome-message h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.welcome-message h1 .badge {
+    font-size: 24px;
+    background-color: #28a745; /* Color verde */
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 0;
+}
+

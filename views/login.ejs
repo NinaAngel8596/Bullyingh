@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <!-- Aquí puedes agregar el logo si es necesario -->
+    </div>
+    
+    <!-- Formulario de inicio de sesión -->
+    <div class="formulario">           
+        <h1>Inicio de sesión</h1>
+        <form method="post">
+            <!-- Campo de nombre de usuario -->
+            <div class="campo username">
+                <input name ="user" type="text" > 
+                <label>Nombre de usuario</label>
+            </div>
+
+            <!-- Campo de contraseña -->
+            <div class="campo contraseña"> 
+                <input name="pass" type="password" >    
+                <label>Contraseña</label>
+            </div>
+
+            <!-- Opción para recordar la contraseña -->
+            <div class="recordar">
+                <a href="#">¿Has olvidado tu contraseña?</a>
+            </div>
+
+            <!-- Botón de inicio de sesión -->
+            <input type="submit" value="Iniciar"> 
+            
+            <!-- Opción para registrarse -->
+            <div class="registrarse">
+                Quiero hacer el <a href="/register">registro</a>
+            </div>
+        </form>
+    </div>
+
+        <!-- Es para la alerta -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <% if (alert) { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: '<%= showConfirmButton %>',
+                timer: '<%= timer %>'
+            }).then(() => {
+                window.location.href = '/<%= ruta %>'; // Cambia esto por la página a la que quieras redirigir
+            });
+        </script>
+        <% } %>
+        
+</body>
+</html>
